@@ -2,7 +2,7 @@
 name = "maloident"
 description = "Model classes for the Marktlokation ID Identification API by EDI@Energy (manually fixed)"
 license = { text = "MIT" }
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 authors = [{ name = "your name", email = "info+github@hochfrequenz.de" }]
 keywords = ["MaLo Ident", "Marktlokation", "BDEW", "MaLo"]
 classifiers = [
@@ -13,6 +13,8 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
