@@ -31,7 +31,7 @@ my_json = {
 result = ResultNegative.model_validate(my_json)
 ```
 
-The request payload type for the Lieferant➡️Netzbetreiber idenfication request is `maloident.models.IdentificationParameter`.
+The request payload type for the Lieferant➡️Netzbetreiber identification request is `maloident.models.IdentificationParameter`.
 
 See the [tests](unittests/test_models.py) for more examples.
 
