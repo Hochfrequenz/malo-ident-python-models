@@ -30,8 +30,7 @@ paths:
       tags:
       - Anfrage MaLo-ID der Marktlokation
       summary: Anfrage MaLo-ID der Marktlokation
-      description: "Inhaltsdatensicherungsebene:
-Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittstellen  wird signiert."
+      description: "Inhaltsdatensicherungsebene: Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittstellen  wird signiert."
       operationId: uploadFile
       parameters:
       - name: transactionId
