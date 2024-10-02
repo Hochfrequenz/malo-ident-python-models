@@ -4,7 +4,7 @@
 # 1. The enum 'marketLocationProperty':
 #    a) It's missing the 'measured' valued which is given as example but not part of the enum members.
 #    b) there is a typo: 'nonActice' should be 'nonActive'
-
+# 2. Some yaml parsers fail, because: Multi-line double-quoted strings are not sufficiently indented (can be found with prettier in CI)
 
 openapi: 3.0.0
 servers:
