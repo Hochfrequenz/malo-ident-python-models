@@ -6,6 +6,7 @@
 #    b) there is a typo: 'nonActice' should be 'nonActive'
 # 2. Some yaml parsers fail, because: Multi-line double-quoted strings are not sufficiently indented (can be found with prettier in CI)
 # 3. Datetimes are poorly designed. Instead of using the OpenAPI format:date-time, a regex with good intentions is used. This leads to code-generators using type string instead of datetime.
+# 4. 'format: UUID RFC4122' may not be recognized but is valid: "Formats such as "email", "uuid", and so on, MAY be used even though undefined by this specification".
 
 openapi: 3.0.0
 servers:
@@ -481,7 +482,7 @@ components:
     initialTransactionId:
       type: string
       description: Zur Angabe des Idempodenzschlüssel im Falle eines Retry.
-      format: UUID RFC4122
+      format: uuid # ERROR-4
       example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
 
     lotNumber:
@@ -727,7 +728,7 @@ components:
     referenceId:
       type: string
       description: Externe Vorgangsreferenz zur eindeutigen Identifikation des ursprünglichen Vorgangs
-      format: UUID RFC4122
+      format: uuid # ERROR-4
       example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
     resultNegative:
       description: Hier wird bei einer neagtiven Antwort der Entscheidungsbaum und der entsprechende Antwortcode aus dem Entscheidungsbaumdiagramm angegeben. Wenn sich die Marktlokation nicht mehr im Netzgebiet befindet ist die MP-ID des NB als "networkOperator" anzugeben, an den die Marktlokation abgegeben wurde.
@@ -827,7 +828,7 @@ components:
     transactionId:
       type: string
       description: Externe Transaktionsnummer zur eindeutigen Identifikation des Vorgangs des sendenden Marktpartners
-      format: UUID RFC4122
+      format: uuid # ERROR-4
       example: f81d4fae-7dec-11d0-a765-00a0c91e6bf6
     trId:
       pattern: "D[A-Z\\d]{9}\\d"
