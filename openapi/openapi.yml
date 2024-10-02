@@ -80,8 +80,7 @@ paths:
       tags:
       - Rückmeldung auf Anfrage
       summary: Negative Rückmeldung auf die Anfrage der MaLo-ID der Marktlokation.
-      description: "Inhaltsdatensicherungsebene:
-Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittstellen  wird signiert."
+      description: "Inhaltsdatensicherungsebene: Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittstellen  wird signiert."
       parameters:
       - name: transactionId
         in: header
@@ -140,8 +139,7 @@ Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittst
       tags:
       - Rückmeldung auf Anfrage
       summary: Postive Rückmeldung auf die Anfrage der MaLo-ID der Marktlokation.
-      description: "Inhaltsdatensicherungsebene:
-Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittstellen  wird signiert."
+      description: "Inhaltsdatensicherungsebene: Der API-Aufruf mit der enthaltenen Payload der hier spezifizierten API-Schnittstellen  wird signiert."
       operationId: ""
       parameters:
       - name: transactionId
