@@ -7,6 +7,7 @@
 # 2. Some yaml parsers fail, because: Multi-line double-quoted strings are not sufficiently indented (can be found with prettier in CI)
 # 3. Datetimes are poorly designed. Instead of using the OpenAPI format:date-time, a regex with good intentions is used. This leads to code-generators using type string instead of datetime.
 # 4. 'format: UUID RFC4122' may not be recognized but is valid: "Formats such as "email", "uuid", and so on, MAY be used even though undefined by this specification".
+# 5. Typing the marketPartnerId as integer is a poor decision. For better compatability, we added the `format: int64`, so that the 13digit values fit (and they don't fit in 32bit).
 
 openapi: 3.0.0
 servers:
@@ -614,6 +615,7 @@ components:
     marketPartnerId:
       pattern: "\\d{13}"
       type: integer
+      format: int64 # ERROR-5
       description: Identifiziert den Marktpartner (Marktpartner-ID)
       example: 9900987654321
 
