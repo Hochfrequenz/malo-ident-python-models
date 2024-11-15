@@ -2,9 +2,9 @@ from typing import Any
 
 import pytest
 
-from maloident.models import IdentificationParameter, ResultNegative, ResultPositive
+from maloident.v1.models import IdentificationParameter, ResultNegative, ResultPositive
 
-from .example_jsons import negative_response_body, positive_response_body, request_body
+from .example_jsons_v1 import negative_response_body, positive_response_body, request_body
 
 
 @pytest.mark.parametrize(
