@@ -10,7 +10,7 @@ pydantic==2.9.2
     # via your-favourite-package-name (pyproject.toml)
 pydantic-core==2.23.4
     # via pydantic
-typing-extensions==4.13.2
+typing-extensions==4.14.1
     # via
     #   pydantic
     #   pydantic-core
