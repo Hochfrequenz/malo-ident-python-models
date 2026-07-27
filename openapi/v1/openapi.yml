@@ -1,5 +1,5 @@
 # This file has been copied from swagger hub.
-# It's used in the auto-code generation with tox -e codegen
+# It's used in the auto-code generation with `uv run --group codegen datamodel-codegen ...` (see README.md)
 # Because - as always with EDI@Energy - things don't work out of the box, we adjusted some parts of the yaml to get working code:
 # 1. The enum 'marketLocationProperty':
 #    a) It's missing the 'measured' valued which is given as example but not part of the enum members.

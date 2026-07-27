@@ -50,7 +50,7 @@ Our changes are mentioned at the beginning of the [`openapi.yml`](openapi/v1/ope
 
 https://github.com/Hochfrequenz/malo-ident-python-models/blob/3cfe0aea3cff051303ef5e513d06ab6c5741f21a/openapi/openapi.yml#L4-L10
 
-After updating the `openapi.yml` file, use
+After updating the `openapi.yml` file, use (this requires Python >=3.10, since `datamodel-code-generator` dropped support for Python 3.9)
 
 ```bash
 uv sync --group codegen
