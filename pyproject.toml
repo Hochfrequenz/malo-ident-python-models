@@ -55,7 +55,7 @@ type_check = ["mypy[pydantic]==1.19.1", { include-group = "tests" }]
 spell_check = ["codespell==2.4.3"]
 coverage = ["coverage==7.15.2; python_version >= '3.10'", { include-group = "tests" }]
 formatting = ["black==25.11.0", "isort==6.1.0"]
-codegen = ["datamodel-code-generator==0.68.1; python_version >= '3.10'", { include-group = "formatting" }]
+codegen = ["datamodel-code-generator==0.71.0; python_version >= '3.10'", { include-group = "formatting" }]
 dev = [
     "pre-commit",
     { include-group = "tests" },
