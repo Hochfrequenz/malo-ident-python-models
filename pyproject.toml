@@ -63,7 +63,7 @@ linting = [
 type_check = ["mypy[pydantic]==1.19.1", { include-group = "tests" }]
 spell_check = ["codespell==2.4.3"]
 coverage = ["coverage==7.15.4; python_version >= '3.10'", { include-group = "tests" }]
-codegen = ["datamodel-code-generator==0.72.2; python_version >= '3.10'", { include-group = "linting" }]
+codegen = ["datamodel-code-generator==0.73.0; python_version >= '3.10'", { include-group = "linting" }]
 dev = [
     "pre-commit",
     { include-group = "tests" },
