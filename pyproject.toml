@@ -57,7 +57,7 @@ ignore_errors = true
 [dependency-groups]
 tests = ["pytest==8.4.2"]
 linting = [
-    "ruff==0.16.2",
+    "ruff==0.16.3",
     { include-group = "tests" },
 ]
 type_check = ["mypy[pydantic]==1.19.1", { include-group = "tests" }]
